@@ -1,0 +1,221 @@
+.App {
+  .header {
+    height: 100vh;
+    // background: linear-gradient(to bottom, #2c9d7f70, #31849d);
+    display: flex;
+    justify-content: center;
+    // Layer 1: Background image
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), 
+        url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .header1 {
+      width: 80%;
+
+      .logo {
+        background-image: url('../images/Logo\ Sotatek\ horizontal.png');
+        width: 600px;
+        height: 300px;
+        background-size: cover;
+      }
+
+      .under-content {
+        display: flex;
+        justify-content: space-between;
+
+        .content-text {
+          color: white;
+          width: 45%;
+
+          .title {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 30px;
+          }
+
+          .des {
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+
+        .gif-header {
+          width: 50%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c9d7f70, #31849d);
+
+    .input-gen {
+      width: 30%;
+      max-width: 700px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 450px;
+
+      .ske-area {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+        border-radius: 5px;
+        margin: 30px 0 30px 0;
+        padding: 10px;
+
+        .upload-no {
+          background: linear-gradient(to bottom, #743ad5, #d53a9d);
+          width: 100%;
+          height: 30px;
+          color: white;
+          font-size: 25px;
+          font-weight: 400;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .upload__image-wrapper {
+          background-image: url('../images/upload.svg');
+          background-size: cover;
+
+          .upload__image-box {
+            width: 500px;
+            height: 500px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+
+            .image-item {
+              position: relative;
+              margin: auto;
+
+
+              img {
+                width: 100%;
+                // height: 350px;
+              }
+
+              .close-ske {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                background-image: url('../images/close.png');
+                background-size: cover;
+              }
+            }
+
+            @media screen and (max-width: 1800px) {
+              width: 300px;
+              height: 300px;
+
+              // .image-item img {
+              //   // Adjust image height if needed
+              //   // height: 200px;
+              // }
+            }
+
+          }
+
+        }
+
+      }
+
+      .syle-gen {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .style-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 10px 10px 0 10px;
+
+          .img-style.active {
+            opacity: 1;
+          }
+
+          .img-style:not(.active) {
+            opacity: 0.5;
+          }
+
+          .img-style {
+            background-image: url('../images/modern.webp');
+
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+          }
+
+          .text-style {
+            font-size: 15px;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .gradient-box {
+        max-width: 500px;
+        margin-top: 20px;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+        border-radius: 5px;
+        width: 450px;
+        height: 50px;
+        padding: 10px;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: rgb(173, 46, 187);
+        font-size: 30px;
+        min-height: 25%;
+
+        @media screen and (max-width: 1800px) {
+          max-width: 300px;
+        }
+      }
+
+      .btn-gen {
+        width: 500px;
+        height: 50px;
+        font-size: 30px;
+        font-weight: 600;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 30px;
+        color: white;
+        background: linear-gradient(to right, #2c9d7f70, #31849d);
+
+        @media screen and (max-width: 1800px) {
+          max-width: 300px;
+        }
+      }
+
+    }
+
+  }
+
+}
